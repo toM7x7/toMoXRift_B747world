@@ -5,7 +5,7 @@ import bpy, json, math, hashlib, time, sys
 from pathlib import Path
 from mathutils import Matrix, Vector
 ROOT=Path(r"D:/personal_dev/XRift/worlds/b747-experience")
-OUT=ROOT/"public/exhibits/astra"
+OUT=ROOT/"public"
 OUT.mkdir(parents=True,exist_ok=True)
 REPORT={"source":bpy.data.filepath,"source_sha256":hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),"default_hidden":["15 | Airframe structure","F17 | Landing gear - 18 wheels"],"notes":["Source file is read only; all evaluation and conversion are in memory.","Camera and light objects are excluded; original shader-independent geometry and font geometry are retained.","Distant 1800m airfield separated as background.glb to avoid overlap in side by side exhibition.","Glass Fresnel plus transparent mix cannot translate exactly to glTF; preserved Principled color/roughness with alpha 0.28 for museum glass, opaque flight glass."],"exports":[]}
 # Translate the unsupported Fresnel/mix output to a glTF-compatible approximation.
@@ -102,7 +102,7 @@ def export(scene,entries,name,animated=True):
         result=objects[0];result.name=(anchor.name+" geometry") if anchor else name+" static scene"
         if anchor:result.parent=anchor_copy(anchor)
     target.frame_set(1);bpy.context.view_layer.update()
-    path=OUT/(name+".glb")
+    path=OUT/("astra-"+name+".glb")
     bpy.ops.export_scene.gltf(filepath=str(path),export_format="GLB",use_active_scene=True,export_cameras=False,export_lights=False,export_extras=False,export_animations=animated,export_animation_mode="SCENE",export_anim_scene_split_object=False,export_frame_range=True,export_force_sampling=True,export_optimize_animation_size=True,export_apply=False,export_yup=True,export_skins=False,export_morph=False,export_shared_accessors=True)
     result={"name":name,"path":str(path),"bytes":path.stat().st_size,"source_mesh_objects_including_instances":len(entries),"evaluated_triangles":triangles,"evaluated_vertices":vertices,"export_mesh_objects":sum(o.type=="MESH" for o in target.objects),"animated_anchors":len(anchors),"bounds_blender_z_up":{"min":lo,"max":hi},"bounds_gltf_y_up":{"min":[lo[0],lo[2],-hi[1]],"max":[hi[0],hi[2],-lo[1]]},"frames":[1,scene.frame_end],"fps":scene.render.fps}
     REPORT["exports"].append(result)

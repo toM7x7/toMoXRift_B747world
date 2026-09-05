@@ -2,7 +2,7 @@
 import bpy, json, pathlib, struct
 from mathutils import Vector
 ROOT = pathlib.Path(r'D:/personal_dev/XRift/worlds/b747-experience')
-OUT = ROOT / 'public/exhibits/sol/main.glb'
+OUT = ROOT / 'public/sol-main.glb'
 REPORT = ROOT / 'docs/sol-scene-report.json'
 OUT.parent.mkdir(parents=True, exist_ok=True)
 REPORT.parent.mkdir(parents=True, exist_ok=True)
@@ -68,17 +68,17 @@ report['background']=subset_stats(background_objects)
 bpy.ops.object.select_all(action='DESELECT')
 for o in background_objects: o.select_set(True)
 bpy.context.view_layer.objects.active=background_objects[0]
-bpy.ops.export_scene.gltf(filepath=str(OUT.parent/'background.glb'),export_format='GLB',use_selection=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False,export_yup=True)
+bpy.ops.export_scene.gltf(filepath=str(OUT.parent/'sol-background.glb'),export_format='GLB',use_selection=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False,export_yup=True)
 collision_names={'Airport_Apron','Main_Deck_Floor','Upper_Deck_Floor','Lower_Cargo_Floor','Cockpit_Floor','Jetbridge_Walk_Floor'}
 collision_objects=[o for o in objects if o.name in collision_names or (o.name.startswith('Upper_Deck_Stair_') or (o.name.startswith('Mobile_Stair_') and o.name.rsplit('_',1)[-1].isdigit()))]
 bpy.ops.object.select_all(action='DESELECT')
 for o in collision_objects: o.select_set(True)
 bpy.context.view_layer.objects.active=collision_objects[0]
-bpy.ops.export_scene.gltf(filepath=str(OUT.parent/'collision.glb'),export_format='GLB',use_selection=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False,export_yup=True,export_materials='NONE')
+bpy.ops.export_scene.gltf(filepath=str(OUT.parent/'sol-collision.glb'),export_format='GLB',use_selection=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False,export_yup=True,export_materials='NONE')
 report['collision']=subset_stats(collision_objects)
 report['collision']['limitations']=['Exact original floor and stair meshes only. Outer shell, seats, railings, vehicles and terminal walls have no collision.','Upper-deck floor has no stairwell opening in original geometry; teleports are required for reliable deck changes.','Mobile stairs rise about 0.377m per step; character step-up support requires live validation.']
 report['placement']={'nose_gltf':[1,0,0],'rotation_y_for_nose_positive_z':-1.5707963267948966,'ground_top_y':0,'main_deck_top_y':5.279999732971191,'upper_deck_top_y':8.005000114440918,'cargo_floor_top_y':3.2200000286102295}
-report['output_files']={p.name:p.stat().st_size for p in OUT.parent.glob('*.glb') if p.name!='scene.glb'}
+report['output_files']={p.name:p.stat().st_size for p in OUT.parent.glob('sol-*.glb') if p.name!='scene.glb'}
 report['source_sha256']='86B258BFCF40E990BF7736A45D79EC293C0B10626FAD56BBECD3489F44048561'
 REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('SOL_ALL_EXPORTS_SUCCESS',json.dumps({'main':report['main'],'background':report['background'],'collision':report['collision'],'files':report['output_files']},ensure_ascii=False),flush=True)

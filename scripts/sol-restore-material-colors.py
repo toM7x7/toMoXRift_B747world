@@ -7,7 +7,7 @@ report_path=root/'docs/sol-scene-report.json'
 report=json.loads(report_path.read_text(encoding='utf-8'))
 records={}
 for name in ['main','background']:
- path=root/f'public/exhibits/sol/{name}.glb'; raw=path.read_bytes()
+ path=root/f'public/sol-{name}.glb'; raw=path.read_bytes()
  size=struct.unpack_from('<I',raw,12)[0]; doc=json.loads(raw[20:20+size]); binary_chunks=raw[20+size:]
  for m in doc['materials']:
   rgba=colors[m['name']]

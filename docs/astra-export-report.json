@@ -14,7 +14,7 @@
   "exports": [
     {
       "name": "main",
-      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\main.glb",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\astra-main.glb",
       "bytes": 97896920,
       "source_mesh_objects_including_instances": 4036,
       "evaluated_triangles": 1627906,
@@ -53,7 +53,7 @@
     },
     {
       "name": "background",
-      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\background.glb",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\astra-background.glb",
       "bytes": 16272,
       "source_mesh_objects_including_instances": 7,
       "evaluated_triangles": 372,
@@ -92,7 +92,7 @@
     },
     {
       "name": "flight",
-      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\flight.glb",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\astra-flight.glb",
       "bytes": 20770400,
       "source_mesh_objects_including_instances": 1505,
       "evaluated_triangles": 556034,
@@ -131,7 +131,7 @@
     },
     {
       "name": "collision",
-      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\collision.glb",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\astra-collision.glb",
       "bytes": 178688,
       "source_mesh_objects_including_instances": 45,
       "evaluated_triangles": 4228,

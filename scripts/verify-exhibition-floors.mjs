@@ -7,7 +7,7 @@ const exhibits = [
 ];
 let failures=0;
 for (const exhibit of exhibits) {
- const bytes=await readFile(new URL(`../public/exhibits/${exhibit.id}/collision.glb`,import.meta.url));
+ const bytes=await readFile(new URL(`../public/${exhibit.id}-collision.glb`,import.meta.url));
  const gltf=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
  const group = new Group(); group.position.x=exhibit.x; group.rotation.y=exhibit.angle; group.add(gltf.scene); group.updateMatrixWorld(true);
  gltf.scene.traverse(node=>{ if(node.isMesh){ const mats=Array.isArray(node.material)?node.material:[node.material]; for(const mat of mats) mat.side=DoubleSide; } });

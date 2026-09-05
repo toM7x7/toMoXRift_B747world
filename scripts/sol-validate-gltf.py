@@ -10,7 +10,7 @@ source=pathlib.Path(report['source'])
 checks={'source_sha256_unchanged':hashlib.sha256(source.read_bytes()).hexdigest().upper()==report['source_sha256'],'files':{}}
 original=load(pathlib.Path(r'D:/personal_dev/blender/B747_GPT-5.6Sol/exports/B747_Airport_Experience.glb'))
 for name in ['main','background','collision']:
-    p=root/f'public/exhibits/sol/{name}.glb'; d=load(p); a=d.get('accessors',[])
+    p=root/f'public/sol-{name}.glb'; d=load(p); a=d.get('accessors',[])
     triangles=sum(a[prim['indices']]['count']//3 for node in d['nodes'] if 'mesh' in node for prim in d['meshes'][node['mesh']]['primitives'])
     entry={'bytes':p.stat().st_size,'mesh_nodes':sum('mesh' in n for n in d['nodes']),'triangles':triangles,'triangles_match_source':triangles==report[name]['triangles'],'animations':len(d.get('animations',[])),'cameras':len(d.get('cameras',[])),'no_external_buffers':all('uri' not in b for b in d.get('buffers',[])),'no_lights':'KHR_lights_punctual' not in d.get('extensionsUsed',[])}
     if name=='main':

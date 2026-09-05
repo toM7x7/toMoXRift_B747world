@@ -53,3 +53,7 @@ node scripts/verify-exhibition-floors.mjs
 - 表示モードとBlender由来の再生状態は各見学者ローカル。既存Claudeの部品選択・分解状態は従来どおりインスタンス共有です。
 
 GitHubへの保存とXRiftへの公開は別工程です。公開時は既存`.xrift/world.json`を使用して公開状態を確認してください。
+
+## Windowsからの公開
+
+公開モデルは`public/sol-*.glb`、`public/astra-*.glb`として直下に配置します。XRift CLI/SDKがWindowsの相対パス区切りをそのまま配信名に使うため、サブフォルダのまま公開するとURLが一致せず404になります。

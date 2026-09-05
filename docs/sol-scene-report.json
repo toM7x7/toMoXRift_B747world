@@ -2,7 +2,7 @@
   "source": "D:\\personal_dev\\blender\\B747_GPT-5.6Sol\\B747_Airport_Experience.blend",
   "source_preserved": true,
   "original_frame": 288,
-  "output": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\sol\\main.glb",
+  "output": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\sol-main.glb",
   "bytes": 30054900,
   "selected_mesh_objects": 1126,
   "excluded_geometry": [

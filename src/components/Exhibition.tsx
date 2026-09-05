@@ -51,20 +51,20 @@ export function ImportedExhibits({ mode, animated }: { mode: ExhibitionMode; ani
   return <>
     {(mode === 'compare' || mode === 'sol') && <group position={[300, 0, 0]} rotation={[0, -Math.PI / 2, 0]}>
       <Suspense fallback={<JPText position={[0, 12, 0]} fontSize={1.5}>Sol 展示を読み込み中</JPText>}>
-        <Asset path="exhibits/sol/main.glb" animated={animated} />
-        <WalkableAsset path="exhibits/sol/collision.glb" />
-        {mode === 'sol' && <Asset path="exhibits/sol/background.glb" />}
+        <Asset path="sol-main.glb" animated={animated} />
+        <WalkableAsset path="sol-collision.glb" />
+        {mode === 'sol' && <Asset path="sol-background.glb" />}
       </Suspense>
     </group>}
     {(mode === 'compare' || mode === 'astra') && <group position={[600, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
       <Suspense fallback={<JPText position={[0, 12, 0]} fontSize={1.5}>Astra 展示を読み込み中</JPText>}>
-        <Asset path="exhibits/astra/main.glb" animated={animated} />
-        <WalkableAsset path="exhibits/astra/collision.glb" />
-        {mode === 'astra' && <Asset path="exhibits/astra/background.glb" />}
+        <Asset path="astra-main.glb" animated={animated} />
+        <WalkableAsset path="astra-collision.glb" />
+        {mode === 'astra' && <Asset path="astra-background.glb" />}
       </Suspense>
     </group>}
     {mode === 'flight' && <group position={[600, 0, 0]}>
-      <Suspense fallback={null}><Asset path="exhibits/astra/flight.glb" animated={animated} /></Suspense>
+      <Suspense fallback={null}><Asset path="astra-flight.glb" animated={animated} /></Suspense>
     </group>}
   </>
 }

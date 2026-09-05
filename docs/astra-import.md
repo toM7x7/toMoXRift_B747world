@@ -2,10 +2,10 @@
 
 対象原本は `D:/personal_dev/blender/B747_GPT6astra/B747_400_Museum update.blend`。READMEが指定するV2改修版を使用した。制作モデルの表記はフォルダ名に基づく GPT-6 Astra。原本を保存せず、Blender 5.1でメモリ内評価してXRift用GLBを書き出している。原本の書き出し前後SHA256は `astra-export-report.json` に記録する。
 
-- `public/exhibits/astra/main.glb`: 機体、内装、ターミナル、搭乗橋、見学デッキ、車両、案内文字、独立エンジン展示。エンジン分解アニメーション1クリップを保持。
-- `public/exhibits/astra/background.glb`: 元シーンの1800m四方の遠景地面と3棟の格納庫。横並び展示の区画と重なるため別ファイルとし、原作全景モードで同時表示する。
-- `public/exhibits/astra/flight.glb`: 別シーンの飛行機体と海岸・空港背景。1〜360フレーム、30fpsの移動・バンクアニメーションを保持。
-- `public/exhibits/astra/collision.glb`: 舗装、ターミナル床、搭乗橋、見学デッキ、階段、機内床、貨物床の評価メッシュ。可視形状全体の衝突化は行わない。
+- `public/astra-main.glb`: 機体、内装、ターミナル、搭乗橋、見学デッキ、車両、案内文字、独立エンジン展示。エンジン分解アニメーション1クリップを保持。
+- `public/astra-background.glb`: 元シーンの1800m四方の遠景地面と3棟の格納庫。横並び展示の区画と重なるため別ファイルとし、原作全景モードで同時表示する。
+- `public/astra-flight.glb`: 別シーンの飛行機体と海岸・空港背景。1〜360フレーム、30fpsの移動・バンクアニメーションを保持。
+- `public/astra-collision.glb`: 舗装、ターミナル床、搭乗橋、見学デッキ、階段、機内床、貨物床の評価メッシュ。可視形状全体の衝突化は行わない。
 
 ## 変換条件
 
