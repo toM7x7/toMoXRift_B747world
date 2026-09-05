@@ -1,0 +1,1634 @@
+[
+  {
+    "name": "MAT_Black",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.00800000037997961,
+      0.00800000037997961,
+      0.009999999776482582,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Cabin_Wall",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.7799999713897705,
+      0.7799999713897705,
+      0.7200000286102295,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Cargo",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.5400000214576721,
+      0.5799999833106995,
+      0.6299999952316284,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Combustor",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.949999988079071,
+      0.20000000298023224,
+      0.02500000037252903,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Compressor",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.3400000035762787,
+      0.3799999952316284,
+      0.41999998688697815,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Concrete",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.2199999988079071,
+      0.23499999940395355,
+      0.25,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Concrete_Light",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.41999998688697815,
+      0.4399999976158142,
+      0.46000000834465027,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Cutaway",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.3799999952316284,
+      0.6700000166893005,
+      0.949999988079071,
+      0.1599999964237213
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Dark_Metal",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.05999999865889549,
+      0.07500000298023224,
+      0.09000000357627869,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Engine_Fan",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.1899999976158142,
+      0.2199999988079071,
+      0.27000001072883606,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Floor",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.07999999821186066,
+      0.10000000149011612,
+      0.14000000059604645,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Fuel",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.9200000166893005,
+      0.18000000715255737,
+      0.03999999910593033,
+      0.550000011920929
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Fuselage_White",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.8199999928474426,
+      0.8600000143051147,
+      0.9200000166893005,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Glass_Dark",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.017999999225139618,
+      0.054999999701976776,
+      0.09000000357627869,
+      0.7200000286102295
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Grass",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.05999999865889549,
+      0.1899999976158142,
+      0.07000000029802322,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Human",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.07999999821186066,
+      0.2199999988079071,
+      0.5199999809265137,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Hydraulic",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.019999999552965164,
+      0.36000001430511475,
+      0.8199999928474426,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Info",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.02500000037252903,
+      0.03999999910593033,
+      0.07000000029802322,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Light",
+    "use_nodes": true,
+    "diffuse_color": [
+      1.0,
+      0.7200000286102295,
+      0.2800000011920929,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Livery_Blue",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.014999999664723873,
+      0.12999999523162842,
+      0.3199999928474426,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Livery_Red",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.7799999713897705,
+      0.03500000014901161,
+      0.03500000014901161,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Marking_White",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.8799999952316284,
+      0.8999999761581421,
+      0.8199999928474426,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Marking_Yellow",
+    "use_nodes": true,
+    "diffuse_color": [
+      1.0,
+      0.5799999833106995,
+      0.014999999664723873,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Metal",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.36000001430511475,
+      0.4000000059604645,
+      0.46000000834465027,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Safety_Red",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.9200000166893005,
+      0.03500000014901161,
+      0.02500000037252903,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Seat_Business",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.41999998688697815,
+      0.07000000029802322,
+      0.11999999731779099,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Seat_Economy",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.019999999552965164,
+      0.2199999988079071,
+      0.4699999988079071,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Seat_First",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.550000011920929,
+      0.3799999952316284,
+      0.10999999940395355,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Structure",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.9200000166893005,
+      0.6399999856948853,
+      0.05000000074505806,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Terminal",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.14000000059604645,
+      0.17000000178813934,
+      0.20999999344348907,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Terminal_Glass",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.05999999865889549,
+      0.20000000298023224,
+      0.28999999165534973,
+      0.41999998688697815
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  {
+    "name": "MAT_Turbine",
+    "use_nodes": true,
+    "diffuse_color": [
+      0.1599999964237213,
+      0.11999999731779099,
+      0.10999999940395355,
+      1.0
+    ],
+    "metallic": 0.0,
+    "roughness": 0.4000000059604645,
+    "nodes": [
+      {
+        "name": "プリンシプルBSDF",
+        "type": "BSDF_PRINCIPLED",
+        "active_output": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.0,
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0
+        }
+      },
+      {
+        "name": "マテリアル出力",
+        "type": "OUTPUT_MATERIAL",
+        "active_output": true,
+        "inputs": {}
+      }
+    ],
+    "links": [
+      {
+        "from": "プリンシプルBSDF",
+        "to": "マテリアル出力",
+        "to_socket": "Surface"
+      }
+    ]
+  }
+]

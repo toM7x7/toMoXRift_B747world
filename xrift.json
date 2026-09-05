@@ -1,0 +1,36 @@
+{
+  "world": {
+    "distDir": "./dist",
+    "title": "B747 AIモデル比較展示会",
+    "description": "Claude / Fable、GPT-5.6 Sol、GPT-6 Astraで制作したB747作品を、機体・内装・空港設備ごと横並びに展示。各区画への移動、原作の遠景を含む全景表示、Astra飛行デモ、分解アニメーションを見比べられます。制作条件と展示倍率が異なる作品比較です。",
+    "thumbnailPath": "thumbnail.png",
+    "buildCommand": "npm run build",
+    "ignore": [
+      "**/.DS_Store",
+      "**/Thumbs.db",
+      "**/*.map",
+      "**/.gitkeep",
+      "**/index.html",
+      "**/__federation_shared_@react-three/drei-*.js",
+      "**/__federation_shared_@react-three/fiber-*.js",
+      "**/__federation_shared_@react-three/rapier-*.js",
+      "**/__federation_shared_@xrift/world-components-*.js",
+      "**/__federation_shared_three-*.js",
+      "**/__federation_shared_three/addons/**",
+      "**/__federation_shared_react-*.js",
+      "**/__federation_shared_react-dom-*.js",
+      "**/__federation_shared_react-dom/client-*.js",
+      "**/__federation_shared_react/jsx-runtime-*.js",
+      "**/rapier.es-*.js",
+      "**/hls-*.js"
+    ],
+    "physics": {
+      "gravity": 9.81,
+      "allowInfiniteJump": true
+    },
+    "camera": {
+      "near": 0.1,
+      "far": 6000
+    }
+  }
+}

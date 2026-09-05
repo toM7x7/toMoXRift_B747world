@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+
+# Environment
+.env
+.env.local
+
+# Editor
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+vite-*.log
+
+# XRift
+.xrift
+
+# Local inspection and transient outputs
+output/
+docs/pre-exhibition/
+NotoSansJP-var.ttf
+scripts/diagnose-typecheck.cjs
+scripts/integrate-exhibition.py
+scripts/flight-viewpoint.py
+scripts/connect-exhibition.py
+scripts/fix-exhibition-syntax.py
+scripts/finish-exhibition-metadata.py
+samplephoto/
+*.log
+__pycache__/

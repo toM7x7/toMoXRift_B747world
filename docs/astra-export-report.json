@@ -1,0 +1,220 @@
+{
+  "source": "D:\\personal_dev\\blender\\B747_GPT6astra\\B747_400_Museum update.blend",
+  "source_sha256": "c359e57da0141418227cf11c4ef876257f741be35cfd7a6a0ef14c3c8533e383",
+  "default_hidden": [
+    "15 | Airframe structure",
+    "F17 | Landing gear - 18 wheels"
+  ],
+  "notes": [
+    "Source file is read only; all evaluation and conversion are in memory.",
+    "Camera and light objects are excluded; original shader-independent geometry and font geometry are retained.",
+    "Distant 1800m airfield separated as background.glb to avoid overlap in side by side exhibition.",
+    "Glass Fresnel plus transparent mix cannot translate exactly to glTF; preserved Principled color/roughness with alpha 0.28 for museum glass, opaque flight glass."
+  ],
+  "exports": [
+    {
+      "name": "main",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\main.glb",
+      "bytes": 97896920,
+      "source_mesh_objects_including_instances": 4036,
+      "evaluated_triangles": 1627906,
+      "evaluated_vertices": 931776,
+      "export_mesh_objects": 13,
+      "animated_anchors": 12,
+      "bounds_blender_z_up": {
+        "min": [
+          -65.0,
+          -65.0,
+          -0.20000000298023224
+        ],
+        "max": [
+          65.0,
+          65.0,
+          19.40999984741211
+        ]
+      },
+      "bounds_gltf_y_up": {
+        "min": [
+          -65.0,
+          -0.20000000298023224,
+          -65.0
+        ],
+        "max": [
+          65.0,
+          19.40999984741211,
+          65.0
+        ]
+      },
+      "frames": [
+        1,
+        360
+      ],
+      "fps": 30
+    },
+    {
+      "name": "background",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\background.glb",
+      "bytes": 16272,
+      "source_mesh_objects_including_instances": 7,
+      "evaluated_triangles": 372,
+      "evaluated_vertices": 200,
+      "export_mesh_objects": 1,
+      "animated_anchors": 0,
+      "bounds_blender_z_up": {
+        "min": [
+          -900.0,
+          -900.0,
+          -0.41499999165534973
+        ],
+        "max": [
+          900.0,
+          900.0,
+          10.0
+        ]
+      },
+      "bounds_gltf_y_up": {
+        "min": [
+          -900.0,
+          -0.41499999165534973,
+          -900.0
+        ],
+        "max": [
+          900.0,
+          10.0,
+          900.0
+        ]
+      },
+      "frames": [
+        1,
+        360
+      ],
+      "fps": 30
+    },
+    {
+      "name": "flight",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\flight.glb",
+      "bytes": 20770400,
+      "source_mesh_objects_including_instances": 1505,
+      "evaluated_triangles": 556034,
+      "evaluated_vertices": 328291,
+      "export_mesh_objects": 2,
+      "animated_anchors": 1,
+      "bounds_blender_z_up": {
+        "min": [
+          -1580.0,
+          -1300.0,
+          -0.46000000834465027
+        ],
+        "max": [
+          1420.0,
+          1300.0,
+          68.27555084228516
+        ]
+      },
+      "bounds_gltf_y_up": {
+        "min": [
+          -1580.0,
+          -0.46000000834465027,
+          -1300.0
+        ],
+        "max": [
+          1420.0,
+          68.27555084228516,
+          1300.0
+        ]
+      },
+      "frames": [
+        1,
+        360
+      ],
+      "fps": 30
+    },
+    {
+      "name": "collision",
+      "path": "D:\\personal_dev\\XRift\\worlds\\b747-experience\\public\\exhibits\\astra\\collision.glb",
+      "bytes": 178688,
+      "source_mesh_objects_including_instances": 45,
+      "evaluated_triangles": 4228,
+      "evaluated_vertices": 2328,
+      "export_mesh_objects": 1,
+      "animated_anchors": 0,
+      "bounds_blender_z_up": {
+        "min": [
+          -65.0,
+          -65.0,
+          -0.20000000298023224
+        ],
+        "max": [
+          65.0,
+          65.0,
+          8.180000305175781
+        ]
+      },
+      "bounds_gltf_y_up": {
+        "min": [
+          -65.0,
+          -0.20000000298023224,
+          -65.0
+        ],
+        "max": [
+          65.0,
+          8.180000305175781,
+          65.0
+        ]
+      },
+      "frames": [
+        1,
+        360
+      ],
+      "fps": 30
+    }
+  ],
+  "collision_sources": [
+    "V2 | Boarding door threshold",
+    "Apron | 130 by 130 metres",
+    "Terminal ground floor",
+    "Terminal mezzanine",
+    "Terminal entrance gentle ramp",
+    "Terminal public lift upper floor",
+    "Boarding bridge | continuous level floor",
+    "L1 flush docking threshold",
+    "Bridge branch landing",
+    "FORWARD open viewing deck",
+    "FORWARD 32 stair treads",
+    "FORWARD stair ground landing",
+    "AFT open viewing deck",
+    "AFT 32 stair treads",
+    "AFT stair ground landing",
+    "Aft terrace public lift upper floor",
+    "Aft lift connecting landing",
+    "Aft lift front access landing",
+    "Aft lift flush threshold",
+    "Catering lift platform",
+    "Main deck | continuous walkable floor",
+    "Upper deck | floor forward",
+    "Upper deck | staircase side landing",
+    "Upper deck | staircase side landing.001",
+    "Staircase | tread 01",
+    "Staircase | tread 02",
+    "Staircase | tread 03",
+    "Staircase | tread 04",
+    "Staircase | tread 05",
+    "Staircase | tread 06",
+    "Staircase | tread 07",
+    "Staircase | tread 08",
+    "Staircase | tread 09",
+    "Staircase | tread 10",
+    "Staircase | tread 11",
+    "Staircase | tread 12",
+    "Staircase | tread 13",
+    "Staircase | tread 14",
+    "Staircase | tread 15",
+    "Staircase | tread 16",
+    "Flight deck floor",
+    "Forward hold | structural floor",
+    "Forward hold | central inspection walkway",
+    "Aft hold | structural floor",
+    "Aft hold | central inspection walkway"
+  ],
+  "source_sha256_after": "c359e57da0141418227cf11c4ef876257f741be35cfd7a6a0ef14c3c8533e383"
+}
